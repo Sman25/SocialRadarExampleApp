@@ -23,7 +23,9 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSLocationAlwaysUsageDescription</key>
-	<string>Test</string>
+	<string>Uses location</string>
+	<key>NSLocationUsageDescription</key>
+	<string>Finds places</string>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>location</string>

@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  TabBarViewController.h
 //  ExampleApp1
 //
 //  Created by Spencer Atkin on 6/23/15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface TabBarViewController : UITabBarController <UITabBarControllerDelegate>
 
 @end
-

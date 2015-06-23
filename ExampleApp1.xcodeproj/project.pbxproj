@@ -8,16 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		E0332708C419B1B4743EC50C /* libPods-ExampleApp1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CAA5C702DC3E0C19865A0BB3 /* libPods-ExampleApp1.a */; };
+		FD8732BD1B39B6AF00D680A8 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD8732BC1B39B6AF00D680A8 /* MapViewController.m */; };
 		FD8CD0AE1B39A16800557B8C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FD8CD0AD1B39A16800557B8C /* main.m */; };
 		FD8CD0B11B39A16800557B8C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD8CD0B01B39A16800557B8C /* AppDelegate.m */; };
-		FD8CD0B41B39A16800557B8C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD8CD0B31B39A16800557B8C /* ViewController.m */; };
 		FD8CD0B71B39A16800557B8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD8CD0B51B39A16800557B8C /* Main.storyboard */; };
 		FD8CD0B91B39A16800557B8C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD8CD0B81B39A16800557B8C /* Images.xcassets */; };
 		FD8CD0BC1B39A16800557B8C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD8CD0BA1B39A16800557B8C /* LaunchScreen.xib */; };
 		FD8CD0C81B39A16800557B8C /* ExampleApp1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD8CD0C71B39A16800557B8C /* ExampleApp1Tests.m */; };
 		FD8FE9011B39A206001260ED /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD8FE9001B39A206001260ED /* MapKit.framework */; };
 		FD8FE9031B39A20B001260ED /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD8FE9021B39A20B001260ED /* CoreLocation.framework */; };
-		FD8FE9061B39A2E8001260ED /* LocationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD8FE9051B39A2E8001260ED /* LocationDelegate.m */; };
+		FDAC542D1B39BD8800BC4350 /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDAC542C1B39BD8800BC4350 /* ListViewController.m */; };
+		FDAC54351B39F39A00BC4350 /* VisitCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FDAC54331B39F39A00BC4350 /* VisitCell.m */; };
+		FDAC54361B39F39A00BC4350 /* VisitCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDAC54341B39F39A00BC4350 /* VisitCell.xib */; };
+		FDE8E2691B39F43E001930F2 /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDE8E2681B39F43E001930F2 /* TabBarViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,13 +37,13 @@
 		885D0BDC8C107F6E31918C63 /* Pods-ExampleApp1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleApp1.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ExampleApp1/Pods-ExampleApp1.debug.xcconfig"; sourceTree = "<group>"; };
 		B8D1A6E287D385D89977971F /* Pods-ExampleApp1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleApp1.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExampleApp1/Pods-ExampleApp1.release.xcconfig"; sourceTree = "<group>"; };
 		CAA5C702DC3E0C19865A0BB3 /* libPods-ExampleApp1.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ExampleApp1.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD8732BB1B39B6AF00D680A8 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		FD8732BC1B39B6AF00D680A8 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		FD8CD0A81B39A16800557B8C /* ExampleApp1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleApp1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD8CD0AC1B39A16800557B8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD8CD0AD1B39A16800557B8C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FD8CD0AF1B39A16800557B8C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FD8CD0B01B39A16800557B8C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		FD8CD0B21B39A16800557B8C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		FD8CD0B31B39A16800557B8C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		FD8CD0B61B39A16800557B8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FD8CD0B81B39A16800557B8C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FD8CD0BB1B39A16800557B8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -49,8 +52,13 @@
 		FD8CD0C71B39A16800557B8C /* ExampleApp1Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExampleApp1Tests.m; sourceTree = "<group>"; };
 		FD8FE9001B39A206001260ED /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		FD8FE9021B39A20B001260ED /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		FD8FE9041B39A2E8001260ED /* LocationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationDelegate.h; sourceTree = "<group>"; };
-		FD8FE9051B39A2E8001260ED /* LocationDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationDelegate.m; sourceTree = "<group>"; };
+		FDAC542B1B39BD8800BC4350 /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
+		FDAC542C1B39BD8800BC4350 /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
+		FDAC54321B39F39A00BC4350 /* VisitCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VisitCell.h; sourceTree = "<group>"; };
+		FDAC54331B39F39A00BC4350 /* VisitCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VisitCell.m; sourceTree = "<group>"; };
+		FDAC54341B39F39A00BC4350 /* VisitCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VisitCell.xib; sourceTree = "<group>"; };
+		FDE8E2671B39F431001930F2 /* TabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarViewController.h; sourceTree = "<group>"; };
+		FDE8E2681B39F43E001930F2 /* TabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,13 +126,14 @@
 			children = (
 				FD8CD0AF1B39A16800557B8C /* AppDelegate.h */,
 				FD8CD0B01B39A16800557B8C /* AppDelegate.m */,
-				FD8FE9041B39A2E8001260ED /* LocationDelegate.h */,
-				FD8FE9051B39A2E8001260ED /* LocationDelegate.m */,
-				FD8CD0B21B39A16800557B8C /* ViewController.h */,
-				FD8CD0B31B39A16800557B8C /* ViewController.m */,
-				FD8CD0B51B39A16800557B8C /* Main.storyboard */,
-				FD8CD0B81B39A16800557B8C /* Images.xcassets */,
+				FDE8E2671B39F431001930F2 /* TabBarViewController.h */,
+				FDE8E2681B39F43E001930F2 /* TabBarViewController.m */,
+				FD8732BB1B39B6AF00D680A8 /* MapViewController.h */,
+				FD8732BC1B39B6AF00D680A8 /* MapViewController.m */,
+				FDAC54311B39F26500BC4350 /* VisitTable */,
 				FD8CD0BA1B39A16800557B8C /* LaunchScreen.xib */,
+				FD8CD0B81B39A16800557B8C /* Images.xcassets */,
+				FD8CD0B51B39A16800557B8C /* Main.storyboard */,
 				FD8CD0AB1B39A16800557B8C /* Supporting Files */,
 			);
 			path = ExampleApp1;
@@ -154,6 +163,18 @@
 				FD8CD0C61B39A16800557B8C /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FDAC54311B39F26500BC4350 /* VisitTable */ = {
+			isa = PBXGroup;
+			children = (
+				FDAC54321B39F39A00BC4350 /* VisitCell.h */,
+				FDAC54331B39F39A00BC4350 /* VisitCell.m */,
+				FDAC54341B39F39A00BC4350 /* VisitCell.xib */,
+				FDAC542B1B39BD8800BC4350 /* ListViewController.h */,
+				FDAC542C1B39BD8800BC4350 /* ListViewController.m */,
+			);
+			name = VisitTable;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD8CD0B71B39A16800557B8C /* Main.storyboard in Resources */,
+				FDAC54361B39F39A00BC4350 /* VisitCell.xib in Resources */,
 				FD8CD0BC1B39A16800557B8C /* LaunchScreen.xib in Resources */,
 				FD8CD0B91B39A16800557B8C /* Images.xcassets in Resources */,
 			);
@@ -297,10 +319,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD8FE9061B39A2E8001260ED /* LocationDelegate.m in Sources */,
-				FD8CD0B41B39A16800557B8C /* ViewController.m in Sources */,
+				FDAC542D1B39BD8800BC4350 /* ListViewController.m in Sources */,
+				FDE8E2691B39F43E001930F2 /* TabBarViewController.m in Sources */,
+				FD8732BD1B39B6AF00D680A8 /* MapViewController.m in Sources */,
 				FD8CD0B11B39A16800557B8C /* AppDelegate.m in Sources */,
 				FD8CD0AE1B39A16800557B8C /* main.m in Sources */,
+				FDAC54351B39F39A00BC4350 /* VisitCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

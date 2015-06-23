@@ -10,7 +10,6 @@
 
 #import <LocationKit/LocationKit.h>
 #import <CoreLocation/CoreLocation.h>
-#import "LocationDelegate.h"
 
 @interface AppDelegate ()
 
@@ -20,7 +19,8 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [[LocationKit sharedInstance] startWithApiToken:@"d735e0f01bef83d5" andDelegate:[LocationDelegate sharedInstance]];
+    CLLocationManager *locationManager = [[CLLocationManager alloc] init];
+    [locationManager requestAlwaysAuthorization];
     // Override point for customization after application launch.
     return YES;
 }
