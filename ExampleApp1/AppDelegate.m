@@ -8,6 +8,10 @@
 
 #import "AppDelegate.h"
 
+#import <LocationKit/LocationKit.h>
+#import <CoreLocation/CoreLocation.h>
+#import "LocationDelegate.h"
+
 @interface AppDelegate ()
 
 @end
@@ -16,6 +20,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [[LocationKit sharedInstance] startWithApiToken:@"d735e0f01bef83d5" andDelegate:[LocationDelegate sharedInstance]];
     // Override point for customization after application launch.
     return YES;
 }
