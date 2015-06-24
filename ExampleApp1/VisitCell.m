@@ -10,8 +10,8 @@
 
 @implementation VisitCell
 
-- (void)initWithPlace:(LKPlace *)place {
-    _placeLbl.text = place.address.locality;
+- (void)setPlace:(LKPlace *)place {
+    [_placeLbl setText:[NSString stringWithFormat:@"%@", place.address.locality]];
 }
 
 @end

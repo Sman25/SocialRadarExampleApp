@@ -21,12 +21,14 @@
 
 @implementation MapViewController
 
+TabBarViewController *parentVC;
+ListViewController *listVC;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     [_mapView setDelegate:self];
-    NSArray *listViewItems = ((ListViewController *)[[TAB_BAR_VC viewControllers] objectAtIndex:1]).items;
-    listViewItems = [listViewItems arrayByAddingObject:@"Hello"];
-    //[((ListViewController *)[[TAB_BAR_VC viewControllers] objectAtIndex:1]).tableView reloadData];
+    parentVC = (TabBarViewController *)[self parentViewController];
+    listVC = ((ListViewController *)[[parentVC viewControllers] objectAtIndex:1]);
     // Do any additional setup after loading the view.
 }
 
@@ -36,12 +38,14 @@
 }
 
 - (void)locationKit:(LocationKit *)locationKit didUpdateLocation:(CLLocation *)location {
-    NSLog(@"Update");
     if (location != nil) {
         NSLog(@"%@", location);
     }
     [[LocationKit sharedInstance] getCurrentPlaceWithHandler:^(LKPlace *place, NSError *error) {
         if (error == nil) {
+            if (place.address.locality != nil) {
+                [listVC addVisitWithPlace:place];
+            }
             NSLog(@"The user is in %@", place.address.locality);
         } else {
             NSLog(@"Error fetching place: %@", error);
@@ -50,7 +54,7 @@
 }
 
 - (void)locationKit:(LocationKit *)locationKit didStartVisit:(LKVisit *)visit {
-    NSLog(@"%@", [[(TabBarViewController *)[self parentViewController] viewControllers] objectAtIndex:1] );
+    //NSLog(@"%@", [[(TabBarViewController *)[self parentViewController] viewControllers] objectAtIndex:1] );
 }
 
 /*

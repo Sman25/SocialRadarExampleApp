@@ -11,8 +11,9 @@
 #import <LocationKit/LocationKit.h>
 
 @interface VisitCell : UITableViewCell
+
 @property (weak, nonatomic) IBOutlet UILabel *placeLbl;
 
-- (void)initWithPlace:(LKPlace *)place;
+- (void)setPlace:(LKPlace *)place;
 
 @end

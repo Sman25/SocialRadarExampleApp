@@ -7,12 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <LocationKit/LocationKit.h>
 
 @interface ListViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
-@property (strong) NSArray *items;
+@property (strong) NSMutableArray *items;
+
+- (void)addVisitWithPlace:(LKPlace *)place;
 
 @end

@@ -17,7 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSLog(@"%@", (UITableView *)[self view]);
+    [_tableView reloadData];
     //[(UITableView *)[self view] setValue:@"Hello" forKey:@"Cell"];
     //[((UITableView *)[self view]) reloadData];
     // Uncomment the following line to preserve selection between presentations.
@@ -34,11 +34,6 @@
 
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    // Return the number of sections.
-    return 1;
-}
-
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 //#warning Incomplete method implementation.
     // Return the number of rows in the section.
@@ -48,18 +43,37 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     //UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     
-    static NSString *cellId = @"PMTableCellIdentifier";
+    static NSString *cellID = @"TableCellIdentifier";
     
-    VisitCell *cell = [self.tableView dequeueReusableCellWithIdentifier:cellId];
+    /*VisitCell *cell = [_tableView dequeueReusableCellWithIdentifier:cellId];
     if(!cell) {
         [_tableView registerNib:[UINib nibWithNibName:@"PMTableViewCell" bundle:nil] forCellReuseIdentifier:cellId];
         cell = [_tableView dequeueReusableCellWithIdentifier:cellId];
-    }    NSLog(@"Cell needed");
+    }*/
     
+    VisitCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
+    if (!cell) {
+        [_tableView registerNib:[UINib nibWithNibName:@"VisitCell" bundle:nil] forCellReuseIdentifier:cellID];
+        cell = [_tableView dequeueReusableCellWithIdentifier:cellID];
+        [cell setPlace:[self getPlace:indexPath.row]];
+    }
     return cell;
 }
+
 - (void)tableView:(UITableView *)tableView willDisplayCell:(VisitCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
-    [cell initWithPlace:[_items objectAtIndex:indexPath.row]];
+    //[cell initWithPlace:[_items objectAtIndex:indexPath.row]];
+}
+
+- (LKPlace *)getPlace:(NSUInteger)index {
+    return [_items objectAtIndex:index];
+}
+
+- (void)addVisitWithPlace:(LKPlace *)place {
+    if (_items == nil) {
+        _items = [[NSMutableArray alloc] init];
+    }
+    [_items addObject:place];
+    [_tableView reloadData];
 }
 
 
